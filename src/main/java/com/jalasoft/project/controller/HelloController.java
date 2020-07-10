@@ -1,9 +1,6 @@
 package com.jalasoft.project.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author HP
@@ -18,4 +15,10 @@ public class HelloController {
                            @RequestParam(value = "lastName") String lastName) {
         return "Hello " + name + " " + lastName;
     }
+
+    @PostMapping
+    public Person sayHelloFile(@RequestBody Person person){
+        return person;
+    }
+
 }
