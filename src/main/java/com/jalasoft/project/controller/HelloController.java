@@ -3,6 +3,9 @@ package com.jalasoft.project.controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.IOException;
+
 
 /**
  * @author HP
@@ -27,6 +30,12 @@ public class HelloController {
     @PostMapping
     @RequestMapping("/hellowithFile")
     public String sayHello(@RequestParam(value = "file") MultipartFile file) {
+        try {
+            file.transferTo(new File(System.getProperty("user.dir") +
+                    "//resources//"+file.getName()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return "Hello " +file.getSize();
     }
 
