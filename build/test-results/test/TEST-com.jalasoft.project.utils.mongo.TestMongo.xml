@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jalasoft.project.utils.mongo.TestMongo" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-08-19T22:01:21" hostname="OPTIMUS-PC" time="0.605">
+  <properties/>
+  <testcase name="testCompanyCollection" classname="com.jalasoft.project.utils.mongo.TestMongo" time="0.539"/>
+  <testcase name="testNumberDB" classname="com.jalasoft.project.utils.mongo.TestMongo" time="0.061"/>
+  <testcase name="testConnect" classname="com.jalasoft.project.utils.mongo.TestMongo" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
