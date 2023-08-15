@@ -1,0 +1,2 @@
+com/jalasoft/project/utils/mongo/TestMongo.java
+ com.jalasoft.project.utils.mongo.TestMongo
